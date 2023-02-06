@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: matrix;
+    src: url(fonts/matrix.ttf);
+ }
+
+@font-face {
+    font-family: pixel;
+    src: url(fonts/Minecraft.ttf);
+ }
+
+.screen {
+    display: flex;
+    height: 100vh;
+}
+
+h1 {
+    font-family: matrix;
+    font-size: 35px;
+    color: #000;
+}
+
+label {
+    font-family: pixel;
+    font-size: 15px;
+    color: #064002;
+}
+
+.leftside {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftside img {
+    max-width: 500px;
+    height: auto;
+}
+
+.rightside {
+    width: 400px;
+    background-color: #ccc;
+    padding: 50px;
+}
+
+.rightside label {
+    display: block;
+    margin-bottom: 10px
+}
+
+.rightside input {
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 14px;
+    outline: 0;
+}
+
+.error {
+    font-size: 11px;
+    background-color: #f00;
+    color: #fff;
+    padding: 4px;
+    border-radius: 5px;
+}
